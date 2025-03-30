@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: uba
+  data:
+    redis:
+      host: localhost
+      port: 6379
+    mongodb:
+      uri: mongodb://localhost:27017/user_events
+    cassandra:
+      keyspace-name: user_actions
+      contact-points: 127.0.0.1
+      local-datacenter: datacenter1
+      port: 9042
+      reactive-connections:
+        enabled: false
